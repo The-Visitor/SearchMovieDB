@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Play your mood</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+        <link href="css\styles.css" rel="stylesheet" />
+    </head>
+    <body style="font-family:roboto">
+        <nav class="navbar navbar-dark bg-primary mainNav">
+                <span class="navbar-text" style="color:white">
+                   Play your Mood 
+                   <img src="Images\play.png" style="height: 25px;width: 25px;" alt="play button"/>
+                </span>        
+                <span class="navbar-text navBarElement" style="color:white" onClick="window.location.reload()">
+                    All Movies
+                </span>
+        </nav>
+        <section class="container">
+            <div class="mainDiv">
+                <h1 style="text-align:center;">Search Your Mood through thoughtworks (possibly).</h1>
+                <br>
+                <div class="row form-group searchField">
+                    <input id="searchField" type="text" class="form-control col-md-10 col-lg-10 inputField" placeholder="Name of the Movie">
+                    <button class="btn btn-primary col-md-2 col-lg-2 inputButton" type="button" onclick="movieSearch()">Search</button>
+                </div>
+                
+                <div class="filterDiv">
+                        Filter By Country  <select class="js-example-basic-multiple sortByCountry" name="languages[]" multiple="multiple" style="width: 50%" >
+                                <option value="USA">USA</option>                        
+                                <option value="UK">UK</option>
+                            </select>
+                </div>
+                <div class="sortYear">
+                    <input type="checkbox" id="sortByYear" onclick="sortByYear()" class="form-check-input"> Sort by Year
+                </div>
+            </div>
+            <div id="app" class="row contentDiv">
+                    
+            </div>
+        </section>
+</body>
+<script src="scripts/script.js"></script>
+</html>

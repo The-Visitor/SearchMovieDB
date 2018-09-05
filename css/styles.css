@@ -1,0 +1,47 @@
+.mainNav {
+  border-radius: 0px;
+  color: white; }
+
+.fontColor {
+  color: white; }
+
+.navBarElement {
+  float: right;
+  color: white;
+  cursor: pointer; }
+
+.mainDiv {
+  width: 100%;
+  margin-top: 20px; }
+
+.searchField {
+  width: 80%;
+  margin-left: 10%; }
+
+.inputField {
+  width: 80%;
+  border-radius: 0px; }
+
+.inputButton {
+  border-radius: 0px;
+  width: 20%; }
+
+.filterDiv {
+  width: 50%;
+  float: left;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: right; }
+
+.sortYear {
+  width: 50%;
+  float: left;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center; }
+
+.contentDiv {
+  width: 100%;
+  margin-left: 4%; }
